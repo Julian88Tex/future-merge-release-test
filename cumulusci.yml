@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '3.76.0'
+project:
+    name: future-merge-release-test
+    package:
+        name: future-merge-release-test
+        api_version: '55.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/future-merge-release-test/tests
+            options:
+                outputdir: robot/future-merge-release-test/results
+
+    robot_testdoc:
+        options:
+            path: robot/future-merge-release-test/tests
+            output: robot/future-merge-release-test/doc/future-merge-release-test_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
