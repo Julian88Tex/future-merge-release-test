@@ -31,4 +31,4 @@ tasks:
 
     github_automerge_main:
         options:
-            --skip_future_releases: False
+            skip_future_releases: False
