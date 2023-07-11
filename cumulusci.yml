@@ -28,3 +28,7 @@ tasks:
     github_automerge_feature:
         options:
             update_future_releases: True
+
+    github_automerge_main:
+        options:
+            --skip_future_releases: False
